@@ -4,13 +4,6 @@
     <color name="colorPrimaryDark">#1a936f</color>
     <color name="colorAccent">#09c269</color>
 
-    <color name="btnCustomer">#7f8c8d</color>
-    <color name="btnMechanic">#7f8c8d</color>
-
     <color name="btnSignUp">#7f8c8d</color>
     <color name="btnSignIn">#2d8cff</color>
-
-    <color name="signUp">#09c269</color>
-
-    <color name="tabtxtColor">#fff</color>
 </resources>

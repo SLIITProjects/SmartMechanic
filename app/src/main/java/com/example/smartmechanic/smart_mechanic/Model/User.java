@@ -4,14 +4,34 @@ public class User {
 
     private String Username;
     private String Password;
+    private String Name;
+    private String Address;
 
     public User() {
 
     }
 
-    public User(String username, String password) {
+    public User(String username, String password, String name, String address) {
         Username = username;
         Password = password;
+        Name = name;
+        Address = address;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getAddress() {
+        return Address;
+    }
+
+    public void setAddress(String address) {
+        Address = address;
     }
 
     public String getUsername() {
