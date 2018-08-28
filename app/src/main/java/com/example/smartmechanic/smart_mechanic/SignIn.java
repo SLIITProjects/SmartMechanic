@@ -1,6 +1,7 @@
 package com.example.smartmechanic.smart_mechanic;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.smartmechanic.smart_mechanic.Common.Common;
 import com.example.smartmechanic.smart_mechanic.Model.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -54,7 +56,11 @@ public class SignIn extends AppCompatActivity {
                             User user = dataSnapshot.child(editUsername.getText().toString()).getValue(User.class);
 
                             if (user.getPassword().equals(editPassword.getText().toString())) {
-                                Toast.makeText(SignIn.this, "SignIn Successfully", Toast.LENGTH_SHORT).show();
+
+                                Intent homeIntent = new Intent(SignIn.this,Home.class);
+                                Common.currentUser = user;
+                                startActivity(homeIntent);
+                                finish();
                             } else {
                                 Toast.makeText(SignIn.this, "Wrong Password or Phone number!", Toast.LENGTH_SHORT).show();
                             }
