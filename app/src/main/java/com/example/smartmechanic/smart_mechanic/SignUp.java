@@ -1,5 +1,6 @@
 package com.example.smartmechanic.smart_mechanic;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
