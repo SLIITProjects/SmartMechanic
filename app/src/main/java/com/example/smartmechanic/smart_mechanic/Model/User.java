@@ -6,6 +6,7 @@ public class User {
     private String Password;
     private String Name;
     private String Address;
+    private String Phone;
 
     public User() {
 
@@ -16,6 +17,14 @@ public class User {
         Password = password;
         Name = name;
         Address = address;
+    }
+
+    public String getPhone() {
+        return Phone;
+    }
+
+    public void setPhone(String phone) {
+        Phone = phone;
     }
 
     public String getName() {

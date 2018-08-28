@@ -24,7 +24,10 @@
             android:name=".Home"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme" />
-        <activity android:name=".PartList"></activity>
+        <activity android:name=".PartList" />
+        <activity android:name=".PartDetalis" />
+        <activity android:name=".Cart" />
+        <activity android:name=".OrderStatus"></activity>
     </application>
 
 </manifest>
